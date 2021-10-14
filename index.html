@@ -1,0 +1,32 @@
+<html>  
+      <head>        <title>            Project C78        </title>
+            <link rel="stylesheet" href="style.css" type="text/css">
+        </head>    <body>        
+        <center style="margin-top: 40px;">        
+            <h1>                My Family Book            </h1>
+                <img src="https://i.postimg.cc/MKdhy06Z/family.jpg" id="family_member_image" width="150px" height="200px">          
+      <h4 id="family_member_name"></h4>            
+    <button onclick="update();">Next<button>      
+             <!-- Debug the above code to create a button with onclick functionality as given below-->  
+                  <!-- <button onclick="update();">Next</button>  -->                  </center>
+            </body>
+        
+    
+    <script >
+    var images = ["https://i.postimg.cc/MGn9GJXw/family.jpg", "https://webstockreview.net/images/dad-clipart-animated.jpg" , "https://th.bing.com/th/id/OIP.nGj4nud2eSJZV7El5tmYrQHaLr?pid=ImgDet&rs=1", "https://cdn.pixabay.com/photo/2013/07/12/19/26/anime-154775_640.png", "https://th.bing.com/th/id/OIP.d9QVIKPweZWxhHl6NzS_RAHaJ2?pid=ImgDet&rs=1"];
+    var names = ["Fmaily Book","Kishore", "Narmada", "Khushi", "Aahil"];
+    var i = 0;
+    
+    function update(){     
+         
+        
+        var numbers_of_family_member_in_array = 4   
+         if (i > numbers_of_family_member_in_array) 
+            {          i = 0;      }   
+            
+          document.getElementById("family_member_image").innerHTML= images[i];  
+      document.getElementById("family_member_name").innerHTML = names[i];
+    i++;
+}
+        </script>
+    </html>
